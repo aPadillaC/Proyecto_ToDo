@@ -1,0 +1,93 @@
+.made{
+    background-color: rgb(115, 223, 115);
+}
+
+.navBarColour{
+    background-color: RGB(247,198,94);
+}
+
+// estilo boton navBar
+
+.buttonColourNavBar {
+    background: #fff; /* color de fondo */
+    color: #306DDB; /* color de fuente */
+    border: 2px solid #306DDB; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .buttonColourNavBar:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  .buttonColourNavBar::after {
+    content: "";
+    background: #306DDB; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .buttonColourNavBar:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+//----------------------------------------------
+
+.buttonColour{
+    background-color: #306DDB;
+}
+
+.buttonColour:hover{
+    box-shadow: 0px 0px 6px black;
+    background-color: #306cdbc6;
+    color: black;
+
+}
+
+.buttonCancel{
+    background-color: rgb(183, 12, 12);
+    border-color: rgb(183, 12, 12);
+    border: 3px;
+}
+
+.buttonCancel:hover{   
+    box-shadow: 0px 0px 6px black;
+    color: black;
+    background-color: rgba(183, 12, 12, 0.67);
+}
+
+.headTable{
+    background-color: rgb(189, 175, 175);
+    
+    th{
+        padding-bottom: 30px;
+    }
+}
+
+tr{
+    height: 90px;
+    font-size: 20px;    
+}
+
+th, td{
+    padding-top: 30px !important;
+}
+
+.tableList{
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray, -5px -5px 5px gray;
+}
