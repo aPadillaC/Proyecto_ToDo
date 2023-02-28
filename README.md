@@ -78,10 +78,7 @@
 <h2 dir="auto"><a id="user-content-contacto" class="anchor" aria-hidden="true" href="#contacto"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Desarrolladores</h2>
 <p dir="auto">El proyecto de aplicación web para Beemeral ha sido desarrollado por un equipo de cuatro personas:</p>
 <ul dir="auto">
-<li><a href="https://www.linkedin.com/in/sergio-jimenez-rubio" rel="nofollow">Sergio Jiménez</a></li>
 <li><a href="https://www.linkedin.com/in/antonio-padilla-carrillo" rel="nofollow">Antonio Padilla</a></li>
-<li><a href="https://www.linkedin.com/in/alfonso-amo" rel="nofollow">Alfonso Amo</a></li>
-<li><a href="www.linkedin.com/in/esteban-mira-puebla" rel="nofollow">Esteban Mira</a></li>
 </ul>
 
 <h2 dir="auto"><a id="user-content-licencia" class="anchor" aria-hidden="true" href="#licencia"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Licencia de uso</h2>
