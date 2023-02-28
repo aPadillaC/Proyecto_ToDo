@@ -106,35 +106,35 @@ describe("Routes Test", () => {
     
             test('should respond with an array', async() => {
                 const response = await request(app).post('/tasks/createTask').send(newTask);
-                expect(response.body).toBeInstanceOf(Array);
+                expect(response.body).toBeInstanceOf(Object);
             });
 
 
             // should respond with a json object containing the new task with an id
             test('should response with an task ID', async() => {
                 const response = await request(app).post('/tasks/createTask').send(newTask);
-                expect(response.body[0].id).toBeDefined();
+                expect(response.body.id).toBeDefined();
             });
         })
 
 
 
-        // describe("when title and description is missing", () => {
+        describe("when title and description is missing", () => {
         
-        //     test('should response with 400 status code', async() => {
-        //         const fields = [
-        //             {},
-        //             {title: "Test Task"},
-        //             {description: "Test Description"}
-        //         ]
+            test('should response with 400 status code', async() => {
+                const fields = [
+                    {},
+                    {title: "Test Task"},
+                    {description: "Test Description"}
+                ]
     
-        //         for (const field of fields){
-        //             const response = await request(app).post('/tasks/createTask').send({field});
-        //             expect(response.statusCode).toBe(400);
-        //         }
-        //     });
+                for (const field of fields){
+                    const response = await request(app).post('/tasks/createTask').send({field});
+                    expect(response.statusCode).toBe(400);
+                }
+            });
         
-        // });
+        });
     });
 
 

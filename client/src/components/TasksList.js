@@ -84,7 +84,7 @@ export const TasksList = () => {
             </tr>
           </thead>
           <tbody>
-            {tasksList.map((task, idx) => {
+            {tasksList?.map((task, idx) => {
               return (
                 <tr key={idx}
                   className={`${task.status ? "made" : ""}`}

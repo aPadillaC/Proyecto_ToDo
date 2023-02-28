@@ -9,17 +9,18 @@ class tasksController {
 
         const {title, description} = req.body;
 
+
         if(!title || !description){
             res.status(400).json("Campos vacíos");
         }
- 
-        Task.bulkCreate([
-        { title, description}
-        ]).then(() => {
-        return Task.findAll();
-        }).then((tasks) => {
-        res.status(200).json(tasks);
-        }).catch((error) => res.status(400).json(error));
+        else{
+            Task.create(
+                { title, description}
+                ).then((task) => {
+                res.status(200).json(task);
+                }).catch((error) => res.status(400).json(error));
+        }
+        
         
     }
 

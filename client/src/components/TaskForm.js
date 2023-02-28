@@ -14,7 +14,7 @@ export const TaskForm = ({show, setShow}) => {
     const [message, setMessage] = useState(false);
     const [task, setTask] = useState(initialValue);
 
-    const {setTasksList, setCondition} = useContext(TaskContext);
+    const {setCondition, setReload, reload} = useContext(TaskContext);
 
 
 
@@ -44,7 +44,7 @@ export const TaskForm = ({show, setShow}) => {
               .post(`http://localhost:4000/tasks/createTask`, task)
               .then((res) => {
                   console.log(res);
-                  setTasksList(res.data);
+                  setReload(!reload);
                   setShow(!show);
               })
               .catch((error) => {
