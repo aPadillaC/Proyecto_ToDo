@@ -34,14 +34,14 @@ export const TaskForm = ({show, setShow}) => {
     const onSubmit = (e) => {
 
         e.preventDefault();
-        let regex = /^\s/ ;
+        let regex = /\w+/ ;
 
         if(!task.title || !task.description){
 
           setMessage(true);
         }
 
-        else if (regex.test(task.title) || regex.test(task.description)){    
+        else if (!regex.test(task.title) || !regex.test(task.description)){    
 
           setMessage2(true);
         }    
@@ -99,7 +99,7 @@ export const TaskForm = ({show, setShow}) => {
             onChange={handlerChange} 
         />
       </Form.Group>
-      {message2 && <p className='text-danger'><strong>Borra el espacio al inicio de tus campos</strong></p>}
+      {message2 && <p className='text-danger'><strong>Debes introducir al menos un caracter en cada campo</strong></p>}
       {message && <p className='text-danger'><strong>Debe de introducir todos los datos</strong></p>}
       <Button 
             className='me-4 buttonColour'
