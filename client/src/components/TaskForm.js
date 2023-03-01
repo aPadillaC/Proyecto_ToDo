@@ -12,6 +12,7 @@ const initialValue = {
 export const TaskForm = ({show, setShow}) => {
 
     const [message, setMessage] = useState(false);
+    const [message2, setMessage2] = useState(false);
     const [task, setTask] = useState(initialValue);
 
     const {setCondition, setReload, reload} = useContext(TaskContext);
@@ -26,19 +27,25 @@ export const TaskForm = ({show, setShow}) => {
         setTask({...task, [name]: value});
 
         setMessage(false);
+        setMessage2(false);
     }
 
     
     const onSubmit = (e) => {
 
         e.preventDefault();
+        let regex = /^\s/ ;
 
         if(!task.title || !task.description){
 
           setMessage(true);
         }
 
-        else{        
+        else if (regex.test(task.title) || regex.test(task.description)){    
+
+          setMessage2(true);
+        }    
+        else{
 
           axios
               .post(`http://localhost:4000/tasks/createTask`, task)
@@ -92,6 +99,7 @@ export const TaskForm = ({show, setShow}) => {
             onChange={handlerChange} 
         />
       </Form.Group>
+      {message2 && <p className='text-danger'><strong>Borra el espacio al inicio de tus campos</strong></p>}
       {message && <p className='text-danger'><strong>Debe de introducir todos los datos</strong></p>}
       <Button 
             className='me-4 buttonColour'

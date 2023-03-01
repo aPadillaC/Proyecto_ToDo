@@ -9,7 +9,6 @@ class tasksController {
 
         const {title, description} = req.body;
 
-
         if(!title || !description){
             res.status(400).json("Campos vacíos");
         }
